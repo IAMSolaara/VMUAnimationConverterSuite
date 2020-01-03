@@ -1,4 +1,4 @@
-# Dreamcast VMUConverterSuite README
+# Dreamcast VMUAnimationConverterSuite README
 
 ## Programs list:
  * [`frameGenerator`](./frameGenerator): a Processing sketch that generates the frames needed for the lcdMaker script, this examples uses the famous DVD player screensaver animation.
