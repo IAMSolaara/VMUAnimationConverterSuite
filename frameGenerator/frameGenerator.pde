@@ -4,6 +4,9 @@ import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
+//variable to toggle exporting. nice feature to have for testing animations without exporting.
+boolean doExport = false;
+
 //this is the number of frames you want.
 //modify it accordingly
 int targetFrames = 127;
@@ -56,7 +59,7 @@ void draw() {
   
   //loop as long as we get the number of frames we want and dump them, otherwise stop
   if (frameCount <= targetFrames) {
-    getScreen();
+    if (doExport) getScreen();
   }
   else noLoop();
 }
